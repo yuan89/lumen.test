@@ -11,6 +11,7 @@ class ComposerStaticInitc13b741f7ea34ce745e805cee8551a6f
         '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
         '1d1b89d124cc9cb8219922c9d5569199' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest.php',
+        'ad155f8f1cf0d418fe49e248db8c661b' => __DIR__ . '/..' . '/react/promise/src/functions_include.php',
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
         'bee9632da3ca00a99623b9c35d0c4f8b' => __DIR__ . '/..' . '/laravel/lumen-framework/src/helpers.php',
     );
@@ -36,6 +37,10 @@ class ComposerStaticInitc13b741f7ea34ce745e805cee8551a6f
             'Symfony\\Component\\EventDispatcher\\' => 34,
             'Symfony\\Component\\Debug\\' => 24,
             'Symfony\\Component\\Console\\' => 26,
+        ),
+        'R' => 
+        array (
+            'React\\Promise\\' => 14,
         ),
         'P' => 
         array (
@@ -74,10 +79,19 @@ class ComposerStaticInitc13b741f7ea34ce745e805cee8551a6f
             'Illuminate\\Broadcasting\\' => 24,
             'Illuminate\\Auth\\' => 16,
         ),
+        'G' => 
+        array (
+            'GuzzleHttp\\Stream\\' => 18,
+            'GuzzleHttp\\Ring\\' => 16,
+        ),
         'F' => 
         array (
             'FastRoute\\' => 10,
             'Faker\\' => 6,
+        ),
+        'E' => 
+        array (
+            'Elasticsearch\\' => 14,
         ),
         'D' => 
         array (
@@ -147,6 +161,10 @@ class ComposerStaticInitc13b741f7ea34ce745e805cee8551a6f
         'Symfony\\Component\\Console\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
+        ),
+        'React\\Promise\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/react/promise/src',
         ),
         'Psr\\Log\\' => 
         array (
@@ -248,6 +266,14 @@ class ComposerStaticInitc13b741f7ea34ce745e805cee8551a6f
         array (
             0 => __DIR__ . '/..' . '/illuminate/auth',
         ),
+        'GuzzleHttp\\Stream\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/streams/src',
+        ),
+        'GuzzleHttp\\Ring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/ringphp/src',
+        ),
         'FastRoute\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/fast-route/src',
@@ -255,6 +281,10 @@ class ComposerStaticInitc13b741f7ea34ce745e805cee8551a6f
         'Faker\\' => 
         array (
             0 => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker',
+        ),
+        'Elasticsearch\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/elasticsearch/elasticsearch/src/Elasticsearch',
         ),
         'Dotenv\\' => 
         array (
@@ -304,6 +334,7 @@ class ComposerStaticInitc13b741f7ea34ce745e805cee8551a6f
     );
 
     public static $classMap = array (
+        'CreateTableCars' => __DIR__ . '/../..' . '/database/migrations/2017_07_28_070148_create_table_cars.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
         'ExampleTest' => __DIR__ . '/../..' . '/tests/ExampleTest.php',
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',

@@ -2,6 +2,9 @@
 namespace App\Http\Controllers;
 
 use App\Car;
+use App\Role;
+use App\Permission;
+use App\User;
 use Illuminate\Http\Request;
 use Elasticsearch\ClientBuilder;
 
@@ -33,7 +36,15 @@ class CarController extends Controller
     }
 
     public function index()
-    {
+	{
+
+		$admin = Role::where('name', '=', 'admin')->first();
+		$user = User::where('username', '=', 'michele')->first();
+		$createPost = Permission::where('name', '=', 'create-post')->first();
+
+		echo $user->encan('edit-user');
+		exit;
+
 		$client = ClientBuilder::create()->build();
 
 		$params = [

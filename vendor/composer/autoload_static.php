@@ -14,12 +14,17 @@ class ComposerStaticInitc13b741f7ea34ce745e805cee8551a6f
         'ad155f8f1cf0d418fe49e248db8c661b' => __DIR__ . '/..' . '/react/promise/src/functions_include.php',
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
         'bee9632da3ca00a99623b9c35d0c4f8b' => __DIR__ . '/..' . '/laravel/lumen-framework/src/helpers.php',
+        'df7cc821128228bf36c2141e6b4f8b50' => __DIR__ . '/..' . '/irazasyed/larasupport/src/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
         'p' => 
         array (
             'phpDocumentor\\Reflection\\' => 25,
+        ),
+        'Z' => 
+        array (
+            'Zizaco\\Entrust\\' => 15,
         ),
         'W' => 
         array (
@@ -52,10 +57,12 @@ class ComposerStaticInitc13b741f7ea34ce745e805cee8551a6f
         ),
         'L' => 
         array (
+            'League\\Flysystem\\' => 17,
             'Laravel\\Lumen\\' => 14,
         ),
         'I' => 
         array (
+            'Irazasyed\\Larasupport\\' => 22,
             'Illuminate\\View\\' => 16,
             'Illuminate\\Validation\\' => 22,
             'Illuminate\\Translation\\' => 23,
@@ -118,6 +125,10 @@ class ComposerStaticInitc13b741f7ea34ce745e805cee8551a6f
             1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
         ),
+        'Zizaco\\Entrust\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zizaco/entrust/src/Entrust',
+        ),
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
@@ -174,9 +185,17 @@ class ComposerStaticInitc13b741f7ea34ce745e805cee8551a6f
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
+        'League\\Flysystem\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/flysystem/src',
+        ),
         'Laravel\\Lumen\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/lumen-framework/src',
+        ),
+        'Irazasyed\\Larasupport\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/irazasyed/larasupport/src',
         ),
         'Illuminate\\View\\' => 
         array (
@@ -335,7 +354,9 @@ class ComposerStaticInitc13b741f7ea34ce745e805cee8551a6f
 
     public static $classMap = array (
         'CreateTableCars' => __DIR__ . '/../..' . '/database/migrations/2017_07_28_070148_create_table_cars.php',
+        'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2017_07_31_055756_create_users_table.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
+        'EntrustSetupTables' => __DIR__ . '/../..' . '/database/migrations/2017_07_31_055306_entrust_setup_tables.php',
         'ExampleTest' => __DIR__ . '/../..' . '/tests/ExampleTest.php',
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
         'File_Iterator_Facade' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Facade.php',
@@ -871,6 +892,7 @@ class ComposerStaticInitc13b741f7ea34ce745e805cee8551a6f
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
         'TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
+        'Zizaco\\Entrust\\MigrationCommand' => __DIR__ . '/..' . '/zizaco/entrust/src/commands/MigrationCommand.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

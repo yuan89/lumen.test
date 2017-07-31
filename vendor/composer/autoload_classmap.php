@@ -7,7 +7,9 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'CreateTableCars' => $baseDir . '/database/migrations/2017_07_28_070148_create_table_cars.php',
+    'CreateUsersTable' => $baseDir . '/database/migrations/2017_07_31_055756_create_users_table.php',
     'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
+    'EntrustSetupTables' => $baseDir . '/database/migrations/2017_07_31_055306_entrust_setup_tables.php',
     'ExampleTest' => $baseDir . '/tests/ExampleTest.php',
     'File_Iterator' => $vendorDir . '/phpunit/php-file-iterator/src/Iterator.php',
     'File_Iterator_Facade' => $vendorDir . '/phpunit/php-file-iterator/src/Facade.php',
@@ -543,4 +545,5 @@ return array(
     'SebastianBergmann\\Version' => $vendorDir . '/sebastian/version/src/Version.php',
     'TestCase' => $baseDir . '/tests/TestCase.php',
     'Text_Template' => $vendorDir . '/phpunit/php-text-template/src/Template.php',
+    'Zizaco\\Entrust\\MigrationCommand' => $vendorDir . '/zizaco/entrust/src/commands/MigrationCommand.php',
 );

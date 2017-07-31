@@ -97,4 +97,10 @@ $app->group(['namespace' => 'App\Http\Controllers'], function ($app) {
     require __DIR__.'/../routes/web.php';
 });
 
+$app->register(Irazasyed\Larasupport\Providers\ArtisanServiceProvider::class);
+$app->register(Zizaco\Entrust\EntrustServiceProvider::class);
+
+$app->configure('auth');
+$app->configure('entrust');
+
 return $app;

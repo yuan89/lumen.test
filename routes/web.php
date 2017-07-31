@@ -22,3 +22,11 @@ $app->group(['prefix' => 'api/v1'], function($app)
     $app->delete('car/{id}','CarController@deleteCar');
     $app->get('car','CarController@index');
 });
+
+//登录注册
+$app->post('user/login', 'UserController@login');
+$app->post('user/register', 'UserController@register');
+$app->get('user/info', [
+    'middleware'    =>  'auth',
+    'uses'  =>  'UserController@info'
+]);
